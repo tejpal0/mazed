@@ -103,8 +103,8 @@
       $shuffled_data = NULL;
       while($matched){
         $shuffled_data = shuffle_grid([1,2,3,4,5,6,7,8,9]);
-        $new_grid = $array;
         $min_moves_req = $shuffled_data[0];
+        $new_grid = $shuffled_data[1];
         $game_grid = array(array($new_grid[0], $new_grid[1], $new_grid[2]), array($new_grid[3], $new_grid[4], $new_grid[5]), array($new_grid[6], $new_grid[7], $new_grid[8]));
         for($i = 0; $i<count($nearby_users_grid); $i++){
           if($game_grid == $nearby_users_grid[$i]){
